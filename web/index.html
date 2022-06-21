@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain Traceable Coffee</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.7.3/dist/web3.min.js"></script>
+    <script type="module" src="./js/farms.js"></script>
+</head>
+
+<body>
+    <div class="ui container">
+        <nav class="column">
+            <div class="ui divider hidden"></div>
+            <div class="ui inverted menu">
+                    <a class="active item" href="index.html">Farm</a>
+                    <a class="item" href="local_team.html">Local Team</a>
+                    <a class="item" href="buyer.html">Buyer</a>
+                    <div class="right menu">
+                        <a class="item">
+                        <i class="bh flag"></i>
+                    </a>
+                      </div>
+            </div>
+        </nav>
+        <div class="ui segments">
+            <div class="ui segment">
+                <h1>Farmer</h1>
+                <h5 class="ui top attached block header">ID (Wallet Address): </h5>
+                <p id="batch-factory-address" class="ui inverted bottom attached segment">0x979BA6496745EAf8d73c823B8938D53a26CD7a81</p>
+            </div>
+        </div>
+        <div class="ui segements">
+            <div class="ui segment">
+                <div class="ui labeled input">
+                <label class="ui horizontal label">Batch Number: </label><input type="text" id="create-lote-number" placeholder="Batch Lote Number">
+</div>
+                <div class="ui right labeled input">
+                <label class="ui horizontal label">Net Weight: </label><input type="text" id="create-batch-type" placeholder="Net Weight">
+                <div class="ui basic label">
+                    KG
+                  </div>
+            </div>
+            <div class="ui divider hidden"></div>
+             
+               
+                <div class="ui divider"></div>
+                <button id="register-batch" class="ui primary button fluid">Register Batch
+                </button>
+            </div>
+        </div>
+        <div class="ui segment">
+            <div id="batch-list" class="ui middle aligned selection list">
+                <h3 class="header">Registrerd Coffee Batches</h3>
+                <div class="ui divider"></div>
+            </div>
+        </div>
+        <div class="ui segments">
+            <div class="ui segment">
+                <h4>Fetching info From Blockchain</h4>
+                <div class="ui divider"></div>
+                <div id="batch-list-details">
+                    <p class="ui red label"><i class="circle user icon"></i></i>Farmer Address:
+                        <label id="details-address" class="detail"></label>
+                    </p>
+                        <div class="ui divider hidden fitted"></div>
+
+                    <p class="ui orange label"><i class="barcode icon"></i>Batch #:                     <label id="details-lote-num" class="detail"></label>
+                    </p>
+                    <label id="details-lote-num" class="detail"></label>
+                    <div class="ui divider hidden fitted"></div>
+
+                    <p class="ui yellow label"><i class="pallet icon"></i>Weight: <label id="details-batch-type" class="detail"></label>
+                    </p>
+                    <label id="details-batch-type" class="detail"></label>
+
+                    <div class="ui divider hidden fitted"></div>
+                   
+                    <p class="ui olive label"><i class="calendar icon"></i>Registration Date:                     <label id="details-creation-date" class="detail"></label>
+                    </p>
+                    <label id="details-creation-date" class="detail"></label>
+
+                    <div class="ui divider"></div>
+                    <h4>Send Coffee to Local Team:</h4>
+                    <div class="ui left icon action input fluid">
+                    <input id="batch-change-ownership-input" class="active" type="text" placeholder="Insert Wallet Address">
+                    <button id="batch-change-ownership-btn" class="ui button secondary large ">تحويل الأمتلاك</button>
+                    <i class="user badge icon"></i>
+                    </div>
+                    <div class="ui divider hidden fitted "></div>
+
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

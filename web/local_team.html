@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain Traceable Coffee</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.7.3/dist/web3.min.js"></script>
+    <script type="module" src="./js/team.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+
+    
+</head>
+
+<body>
+    <div class="ui container">
+        <nav class="column">
+            <div class="ui divider hidden"></div>
+            <div class="ui inverted menu">
+                    <a class="item" href="index.html">Farm</a>
+                    <a class="active item" href="local_team.html">Local Team</a>
+                    <a class="item" href="buyer.html">Buyer</a>
+                    <div class="right menu">
+                        <a class="item">
+                        <i class="bh flag"></i>
+                    </a>
+                      </div>
+            </div>
+        </nav>
+        <div class="ui divider hidden"></div>
+        <div class="ui segements">
+            <div class="ui segment">
+                <h1>Local Team</h1>
+                <h5 class="ui top attached block header">ID (Wallet Address): </h5>
+                <p id="order-factory-address" class="ui inverted bottom attached segment">0x33CE1E9e47E2E4cEF2f1BfD1F31eE0c15b5F0a07</p>
+            </div>
+        </div>
+        <div class="ui segment">
+            <div class="ui two column very relaxed grid">
+                <div class="column">
+                <div id="order-batch-list" class="ui tiny middle aligned selection list">
+                    <h3 class="header">Coffee Batches Owned</h3>
+                    <div class="ui divider"></div>
+                </div>
+                </div>
+            
+            <div class="column">
+                <div class="ui labeled input fluid middle aligned right floated">
+                <p class="ui label">Order Lote Number: </p><input type="text" id="create-order-lote-number" placeholder="Order Lote Number">
+                </div>
+                <div class="ui divider hidden fitted"></div>
+                <button id="register-order" class="ui button primary fluid">Create Order</button>
+
+            </div>
+        </div>
+        <div class="ui vertical divider">
+            <i class="icon alternate arrow circle right"></i>
+          </div>
+        </div>
+        <div class="ui segment">
+        <div class="ui two column relaxed grid">
+            <div class="column">
+                <div id="order-list" class="ui tiny middle aligned selection list">
+                    <h3 class="header">Current Ready Orders</h3>
+                    <div class="ui divider"></div>
+                </div>
+            </div>
+            <div class="column">
+                <div id="order-list-details">
+                    <label class="ui red horizontal label">Farmer Address:</label>
+                    <p id="order-details-address" class="detail"></p>
+                    <label class="ui teal horizontal label">Order Lote Number:</label>
+                    <p id="order-details-lote-num" class="detail"></p>
+                    <label class="ui violet horizontal label" >Batchs:</label>
+                    <p id="order-details-batches" class="ui tiny middle aligned list detail"></p>
+                    <label class="ui olive horizontal label">Creation Date:</label>
+                    <p id="order-details-creation-date" class="detail"></p>
+
+                    <div class="ui input focus fluid">
+                    <input id="order-change-ownership-input" type="text" placeholder="Insert address">
+                </div>
+                <div class="ui divider fitted hidden"></div>
+                    <button id="order-change-ownership-btn" class="ui button secondary large fluid">Change Ownership</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
