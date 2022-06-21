@@ -2,7 +2,7 @@
 
 ![Truffle Test Screenshot](https://github.com/HamadAljawder/BlockchainTraceableCoffee/blob/main/Screenshot.png)
 
-A simple supply chain authenticity/tracebility demo that records owenership and transactions of products on the ethereum blokchain using smart contracts. It is based on the coffee industry suppply chain (direct-trade model).
+A simple supply chain authenticity/traceability demo that records owenership and transactions of products on the ethereum blockchain using smart contracts. It is based on the coffee industry supply chain (direct-trade model).
 
 The functionality is provided by two Smart Contracts:
 
