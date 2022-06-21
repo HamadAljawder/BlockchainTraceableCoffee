@@ -14,7 +14,7 @@ Each has its own view (page) and we keep them separated to better demonstrate ho
 
 ## Setup and Running
 
-The smart contracts and the tests [Truffle](https://truffleframework.com/truffle) and [Ganache](https://truffleframework.com/ganache) are used., so first install them: `npm install -g ganache-cli truffle`
+The smart contracts and the tests [Truffle](https://truffleframework.com/truffle) and [Ganache](https://truffleframework.com/ganache) are used, so first install them: `npm install -g ganache-cli truffle`
 
 
 Install [Metamask](https://metamask.io/) extension to enable web3 interaction with browser.
